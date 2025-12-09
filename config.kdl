@@ -224,9 +224,6 @@ binds {
     Mod+D hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
-    Super_L hotkey-overlay-title="Application Launcher" {
-        spawn "dms" "ipc" "call" "spotlight" "toggle";
-    }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
     }
@@ -247,11 +244,12 @@ binds {
         spawn "dms" "ipc" "call" "lock" "lock";
     }
 
-    Mod+Alt+P hotkey-overlay-title="Lock Screen" {
+    Mod+Alt+P hotkey-overlay-title="Power Menu" {
         spawn "dms" "ipc" "call" "powermenu" "toggle";
     }
 
     Mod+Shift+E { quit; }
+
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" {
         spawn "dms" "ipc" "call" "processlist" "toggle";
     }
