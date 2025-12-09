@@ -126,8 +126,12 @@ overview {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 spawn-at-startup "dms" "run"
+
 spawn-at-startup "flatpak" "run" "dev.vencord.Vesktop"
+spawn-at-startup "flatpak" "run" "org.mozilla.Thunderbird"
+
 spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
+
 environment {
   XDG_CURRENT_DESKTOP "niri"
   QT_QPA_PLATFORM "wayland"
@@ -214,6 +218,14 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+window-rule {
+    match app-id="vesktop"
+    match app-id="org.mozilla.Thunderbird"
+    exclude at-startup=false
+
+    default-column-width { proportion 0.90; }
+}
+
 binds {
     // === System & Overview ===
     Mod+Tab repeat=false { toggle-overview; }
