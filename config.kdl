@@ -124,7 +124,6 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-spawn-at-startup "dms" "run"
 spawn-at-startup "fcitx5" "-d"
 
 spawn-at-startup "flatpak" "run" "dev.vencord.Vesktop"
@@ -283,6 +282,9 @@ binds {
     }
     XF86AudioMicMute allow-when-locked=true {
         spawn "dms" "ipc" "call" "audio" "micmute";
+    }
+    XF86Search allow-when-locked=true {
+        spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
 
     // === Brightness Controls ===
