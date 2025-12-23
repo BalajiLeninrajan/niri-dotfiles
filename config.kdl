@@ -243,6 +243,9 @@ binds {
     Mod+D hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
+    XF86Search {
+        spawn "dms" "ipc" "call" "spotlight" "toggle";
+    }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
     }
@@ -287,7 +290,6 @@ binds {
         spawn "dms" "ipc" "call" "audio" "micmute";
     }
 
-
     XF86AudioPlay allow-when-locked=true {
         spawn "dms" "ipc" "call" "mpris" "playPause";
     }
@@ -296,10 +298,6 @@ binds {
     }
     XF86AudioPrev allow-when-locked=true {
         spawn "dms" "ipc" "call" "mpris" "previous";
-    }
-
-    XF86Search {
-        spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
 
     // === Brightness Controls ===
