@@ -278,10 +278,10 @@ binds {
 
     // === Audio Controls ===
     XF86AudioRaiseVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "increment" "5";
+        spawn "dms" "ipc" "call" "audio" "increment" "1";
     }
     XF86AudioLowerVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "decrement" "5";
+        spawn "dms" "ipc" "call" "audio" "decrement" "1";
     }
     XF86AudioMute allow-when-locked=true {
         spawn "dms" "ipc" "call" "audio" "mute";
@@ -302,10 +302,10 @@ binds {
 
     // === Brightness Controls ===
     XF86MonBrightnessUp allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+       spawn "dms" "ipc" "call" "brightness" "increment" "1" "";
     }
     XF86MonBrightnessDown allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+       spawn "dms" "ipc" "call" "brightness" "decrement" "1" "";
     }
 
     // === Window Management ===
