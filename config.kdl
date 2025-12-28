@@ -237,6 +237,7 @@ binds {
     // === System & Overview ===
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Ctrl+Alt+K { spawn "sh" "-c" "pgrep kanata || kanata --cfg /home/balaji/.config/kanata/config.kbd"; }
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
