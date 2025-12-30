@@ -303,6 +303,12 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true {
        spawn "dms" "ipc" "call" "brightness" "decrement" "1" "";
     }
+    XF86KbdBrightnessUp allow-when-locked=true {
+       spawn "dms" "ipc" "call" "brightness" "increment" "5" "leds:apple::kbd_backlight";
+    }
+    XF86KbdBrightnessDown allow-when-locked=true {
+       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "leds:apple::kbd_backlight";
+    }
 
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
