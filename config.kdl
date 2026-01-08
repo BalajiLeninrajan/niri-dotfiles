@@ -148,6 +148,7 @@ environment {
 hotkey-overlay {
     skip-at-startup
 }
+prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
     slowdown 0.75
@@ -232,6 +233,9 @@ binds {
     // === System & Overview ===
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Ctrl+Alt+K {
+        spawn "ghostty" "-e" "zsh" "-ic" "kanata --cfg ~/.config/kanata/config.kbd";
+    }
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
