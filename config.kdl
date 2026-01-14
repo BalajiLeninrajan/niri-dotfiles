@@ -459,3 +459,7 @@ binds {
 debug {
     honor-xdg-activation-with-invalid-serial
 }
+
+include "dms/cursor.kdl"
+
+include "dms/outputs.kdl"
