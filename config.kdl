@@ -321,8 +321,8 @@ binds {
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
     Mod+F { spawn "sh" "-c" "niri msg action set-column-width 95% && niri msg action center-column"; }
-    Mod+Shift+F { maximize-column; }
-    Mod+Ctrl+F hotkey-overlay-title="Full Screen Window" { fullscreen-window; }
+    Mod+Ctrl+F { maximize-column; }
+    Mod+Alt+F hotkey-overlay-title="Full Screen Window" { fullscreen-window; }
     Mod+Space { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+T { toggle-column-tabbed-display; }
