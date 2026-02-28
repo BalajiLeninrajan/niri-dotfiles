@@ -152,7 +152,7 @@ environment {
 hotkey-overlay {
     skip-at-startup
 }
-prefer-no-csd
+
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations {
     slowdown 0.75
@@ -439,8 +439,8 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
 
     // === Manual Sizing ===
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
+    Mod+Minus { set-column-width "-5%"; }
+    Mod+Equal { set-column-width "+5%"; }
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
